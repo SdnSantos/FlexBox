@@ -1,12 +1,43 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
 #app {
   display: flex;
   /* padrão */
-  flex-direction: row;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-between; */
 }
 
 .box {
-  width: 60px;
+  width: 300px;
   height: 60px;
-  background: #f00;
   margin: 5px;
+  /* aceita ser aumentado para caber no container pai */
+  /* flex-grow: 1; */
+  /* aceita ser espremido para caber no container pai */
+  /* flex-shrink: 0; */
+  /* é a soma do flex-grow com o flex shrink */
+  /* flex: 1 0 auto; */
+}
+
+.green {
+  background: #0f0;
+  order: 2;
+}
+
+.blue {
+  background: #00f;
+  order: 0;
+}
+
+.red {
+  background: #f00;
+  order: 3;
 }
